@@ -1,21 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LiuYanQi 作品集</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="./favicon.ico"></link>
+  <style>
+    /* 重置默认样式 */
+    body,
+    h1,
+    p,
+    a,
+    img {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 设置页面背景和字体 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* 容器样式 */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* 标题样式 */
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #444;
+    }
+
+    /* 作品集网格布局 */
+    .portfolio-grid {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    /* 单个作品集项样式 */
+    .portfolio-item {
+      width: 45%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 封面图片样式 */
+    .portfolio-item img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    /* 作品集文字描述样式 */
+    .portfolio-item p {
+      padding: 15px;
+      font-size: 1.2em;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
-  <div id="container"></div>
-  <div class="footer">
-    <p>© <a href="/">LiuYanQi</a></p>
+  <div class="container">
+    <h1>LiuYanQi 作品集</h1>
+    <div class="portfolio-grid">
+      <a href="first.html" class="portfolio-item">
+        <img src="./images/cover1.jpg" alt="作品集一封面">
+        <p>作品集（2021~2025）</p>
+      </a>
+      <a href="second.html" class="portfolio-item">
+        <img src="./images/cover2.jpg" alt="作品集二封面">
+        <p>作品集（2019~2020）</p>
+      </a>
+    </div>
   </div>
-  <div id="backTop">
-    <i class="arrow-icon"></i>回顶部
-  </div>
-  <script src="./js/index.js"></script>
 </body>
+
 </html>
